@@ -1,0 +1,9 @@
+# Force GitHub to detect these languages
+*.xml linguist-language=XML
+*.html linguist-language=HTML
+*.css linguist-language=CSS
+*.js linguist-language=JavaScript
+
+# Tell GitHub not to ignore these folders
+static/** linguist-vendored=false
+views/** linguist-vendored=false
