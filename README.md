@@ -1,3 +1,4 @@
+<!-- README HTML for School Management Module (GitHub Compatible) -->
 <section style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; line-height:1.6; color:#222; max-width:900px; margin:24px auto; padding:18px;">
   <header style="display:flex; align-items:center; gap:12px; margin-bottom:18px;">
     <div style="font-size:34px;">📘</div>
