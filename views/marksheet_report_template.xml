@@ -1,0 +1,36 @@
+<odoo>
+    <template id="report_marksheet">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <t t-foreach="docs" t-as="doc">
+                    <t t-foreach="docs" t-as="o">
+                        <div class="page">
+                            <br/>
+                            <br/>
+                            <h2>Marksheet</h2>
+                            <p><strong>Student Name:</strong> <span t-esc="o.student_id.name"/></p>
+                            <p><strong>Class:</strong> <span t-esc="o.class_id.name"/></p>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>Obtained Marks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="o.marksheet_line_ids" t-as="line">
+                                        <td t-esc="line.subject_id.name"/>
+                                        <td t-esc="line.obtained_marks"/>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p><strong>Total Marks:</strong> <span t-esc="o.total_marks"/></p>
+                            <p><strong>Percentage:</strong> <span t-esc="o.percentage"/>%</p>
+                            <p><strong>Grade:</strong> <span t-esc="o.grade"/></p>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>
